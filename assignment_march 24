@@ -1,0 +1,7 @@
+1)
+create a todos table in mysql. create a router called todomysql. 
+then create complete api to delete a todo, create a todo, create a table, delete all todos, update todo. 
+todo will have 2 properties item and status. Integrate it with react
+
+2) Create Author API using mysql with same fields as you did with mongoose and integrate it with react
+ 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <script>
+      function generateRandomNo() {
+        let promiseOb = new Promise(function (resolve, reject) {
+          setTimeout(() => {
+            let randomNo = Math.round(Math.random() * 10);
+            console.log(randomNo);
+            resolve(randomNo);
+          }, 4000);
+        });
+        return promiseOb;
+      }
+      async function doAsyncJob() {
+        try {
+          let randomNo = await generateRandomNo();
+          console.log("Ran this code immediately as above code will take");
+          alert(randomNo);
+        } catch (error) {
+          alert(error);
+        }
+      }
+      doAsyncJob();
+    </script>
+  </body>
+</html>

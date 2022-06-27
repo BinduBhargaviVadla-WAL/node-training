@@ -1,0 +1,18 @@
+1)Create a React Component where you can login with the previous login api you created. 
+This time after you login, you will redirect the route in react to /members. 
+Note: "/members" route is protected route. means only those who are successfully logged in can view it.
+on going to "/members" page you will show all details of the user. 
+Note: on sucessful login you will save the token in localStorage.
+2) create a Logout componet which you will show on the top right. the Logout component will show a logout button. 
+on clicking of this button, u will delete the jwt token from local storage. 
+
+3) create a api for editing user details like name,age,dob and password. in react you will create a component called EditUser and on this component you will show a form where you will show all details pre populated. 
+now you will send request to backend to modify the details.
+Note: send jwt token in header using axios.you can google search how to send headers in axios. 
+like this 
+axios.get('https://example.com/getSomething', {
+ headers: {
+   token: "Asdfasdfas13123123"
+ }
+})
+Keep in mind that all api that need user to be logged in should contain the middleware to verify jwt token.

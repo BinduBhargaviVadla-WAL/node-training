@@ -1,0 +1,18 @@
+1) create a Bank application. 
+It will have 3 tables. 
+ Users table
+ fields are  username(varchar(100)), email(varchar(100)), password(varchar(100)),createAt,updatedAt
+ table name: Balance
+ fields are : userid: foreign key of users table, balance(number),createdAt,updatedAt
+
+ Transaction Table
+ fields are userid: foreign key to users table, transaction_date(date),transaction_amount(int).
+
+ Now you have to insert data in these tables for testing. 
+
+ Now you have to do one transaction where you will create a user smith who has a balance of 50000. he will transfer 10000 to Tom who is another user. 
+
+ keep in mind that you update 2 tables. one is transaction table with details of transaction. 
+ one is balance table where you run 2 queries. first you remove money from smith . second you add money to Tom. 
+
+so total of 3 queries. these queries should run in transaction.

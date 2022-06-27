@@ -1,0 +1,7 @@
+1)create a Users table with id(autoincrement),username,password, dob with mysql.
+create a seqlize model for that.
+2) create a Category table in mysql with 3 fields, name, description and id(auto increment).
+create a sequlize model
+3)create a login api with jwt login and integrate with react. this time u will use the .env file to store and 
+get mysql username, password, host and all other details.
+integrate it with react

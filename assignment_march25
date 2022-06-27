@@ -1,0 +1,19 @@
+1) Create a applicaition in react where a user can set his city in a component.
+then create a submit button.
+on clicking submit button you have to send the city name to the server using axios. 
+it should be able to set a cookie. 
+
+2) create a react component where you can set the cookie name, value, and time in minutes. 
+on clicking submit, it should be able to set the cooke.
+
+3)Use connection pooling and use prepared statement for queries.
+ Create a restraunt  application. 
+there are 2 tables.
+ dishes: name(varchar(100)), description(text), id(Primary key), category(foreign key), price(int) 
+ category: id(primary key),name(varchar(100)), description(text),
+
+create api to create,read,update and delete categoy. integrate with react component called Category.
+now you have to create API to create,read,update,delete,delete all dishes, search dish by name.
+create react component to integrate it.While creating dish, you should get all categories from backend in a select and then send category id to insert into the dishes table.
+
+

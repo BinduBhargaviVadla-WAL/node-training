@@ -1,0 +1,16 @@
+1) Create a file managment application. 
+you will create api to create a file where you can enter the fileName and file contents.
+then you will create the file in a directory called files. files directory should be in westsidenodeapp folder 
+
+you will create a react component in front end where you will send the name of file and contents. 
+2) you will create a api to create a folder in the files folder. you will send the folder name. 
+you will create a react component called CreateFolder which will create the folder. 
+
+3) you will create a FolderContents component in react which will show contents of all files in a list. 
+you will create a backend where you wll send all files in the folder. 
+you have to add a delete button next to every file listing. on clicking the delete button, that file should be deleted and your
+ list should be updated(for that you have to again send request to get updated contents of the file)
+
+4)create a component where you can enter the name of the file in a text box and it will show the contents of the file in a textarea.
+ the reason is that you will have one more button called modify. in the text area you can modify the contents and if you click on modify,
+ it will send the content to server and modify the contents( note: you are modifiying not appending so dont use append function)

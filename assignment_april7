@@ -1,0 +1,2 @@
+1) implement a logger where you can show status, response code and time taken in request. it should be custom message.use morgan logger
+2) create a socket server which sends current time(in hours:minutes:seconds am/pm). impelment a front end in react to show the time. 

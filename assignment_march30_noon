@@ -1,0 +1,11 @@
+1) yyou have to create a api in express for file upload using multer. 
+
+
+These are the links to follow:
+https://code.tutsplus.com/tutorials/file-upload-with-multer-in-node--cms-32088
+
+2) you have to integreate it with react.
+https://dev.to/przpiw/file-upload-with-react-nodejs-2ho7
+
+
+You have to be able to upload a file in react and get it uploded and saved in backend.

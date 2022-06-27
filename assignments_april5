@@ -1,0 +1,26 @@
+following will be done only with sequelize and sequelize-cli 
+refer to the data types here:https://codewithhugo.com/sequelize-data-types-a-practical-guide/
+1) create a user table in mysql.
+the fields are username(varchar(25)), password(varchar(100)),date_of_creation(date)
+
+note: date_of_creation is the date when user is created.
+
+create api to create user, edit user, read user and delete user. 
+
+in create user you have to put a condition where you will find if the given  username exist or not. If the username exists then send message saying 
+{status:0, debug_data:"username already exists"} . if the username doesnt exit then create the user and send message {status:1, data:"user created"}
+
+Now create API "/checklogin" where you will provide a username and password. If username and password is correct then it will return {status:1, data:username}  means user is logged in, else you return {status:0, data:"incorrect login details"}
+here you will set 2 session values when username and password is correct. 
+ isLoggedIn  if user has sent right username and password, 0 if username or password dont match) 
+ username you will store the username in this value. you may need it in other functions.
+
+
+2) create API which will show all details of user. But this api should only send data if user is logged in. 
+how will you find which username details to show? simple you have stored username and isLoggedIn in the session variable. 
+from that u can find username and send all details of user which is userid, password, etc
+
+if user is not notted in then send {status:0, debug_data:"you are not logged in "} else you will send {status:1, data:userOb}  .
+userOb in data value is the object that has all user properties
+
+https://medium.com/@prajramesh93/getting-started-with-node-express-and-mysql-using-sequelize-ed1225afc3e0

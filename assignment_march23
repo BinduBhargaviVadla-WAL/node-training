@@ -1,0 +1,48 @@
+It is advised to refer to mongoose documentation to find right function for a requirement.https://mongoosejs.com/docs/api.html
+
+1) Create a Categories API with mongoose. 
+Fields are name,description. create CRUD API(create,read,update and delete). 
+
+Next link the category to book model like we did author in book model. 
+Now you need to create api where you will show details of both author and category in the response with url as localhost:3000/book/authorandcategory. To get both u need to write code as :
+	Book.find()
+		.populate("author")
+		.populate("cagegory")
+		.exec(...)
+
+2) create API to get book details by id. ur url should be localhost:3000/bookid and you should be able to get book details. 
+refer to documentation of mongoose for it. 
+
+3)1)Create a Ecommerce API.
+you need to have 1 collection.
+Products: should have name,price, avaialability(available/not available)
+you need to create 4 end points
+post url localhost:3000/product will create product. 
+get url localhost:3000/product -- show all products as json
+delete url localhost:3000/product/id
+localhost/product/id -->send json for only that product.
+edit url:localhost/product/id -->send json response that product is modified.
+
+findbyproduct url
+GET localhost/productsearch/:name --> show pprduct by name
+
+also create new urls to find product by availability.
+
+find product higher than a price
+GET localhost/productsearch/:price
+if price is greater than price send, show all products in json
+refer to mongoose documentation. 
+4) create a user api.
+fields are username,name,dob,password
+you need to create 4 end points
+post url localhost:3000/user will create user. 
+get url localhost:3000/user -- show all users as json
+delete url localhost:3000/user/id
+localhost/user/id -->send json for only that user.
+put request to modify user.
+
+
+make 4 urls to find by username, name,dob and password
+ex
+localhost/dobsearch/:dob
+		
